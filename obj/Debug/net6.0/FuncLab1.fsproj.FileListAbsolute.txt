@@ -25,3 +25,4 @@ C:\Users\varte\source\repos\FuncLab1\FuncLab1\obj\Debug\net6.0\FuncLab1.fsproj.U
 C:\Users\varte\source\repos\FuncLab1\FuncLab1\obj\Debug\net6.0\FuncLab1.dll
 C:\Users\varte\source\repos\FuncLab1\FuncLab1\obj\Debug\net6.0\FuncLab1.pdb
 C:\Users\varte\source\repos\FuncLab1\FuncLab1\obj\Debug\net6.0\FuncLab1.genruntimeconfig.cache
+C:\Users\varte\source\repos\FuncLab1\FuncLab1\obj\Debug\net6.0\FuncLab1.sourcelink.json
