@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "kVbeCn6h3Dw=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\varte\\source\\repos\\FuncLab1\\FuncLab1\\FuncLab1.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\varte\\.nuget\\packages\\fsharp.core\\8.0.401\\fsharp.core.8.0.401.nupkg.sha512"
+  ],
+  "logs": []
+}
