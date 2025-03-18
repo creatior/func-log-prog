@@ -1,6 +1,7 @@
 ﻿open System
 open HelloWorld
 open QuadraticEquation
+open SumDigits
 
 let circleArea radius = 
     let area = Math.PI * radius * radius
@@ -38,6 +39,15 @@ let main args =
     let volume2 = cylinderVolumeSuperPos r h
 
     System.Console.WriteLine("Объем: (суперпозиция): " + volume2.ToString() + "\n")
+
+    System.Console.Write("Сумма цифр\nВведите число: ")
+    let n = System.Console.ReadLine() |> int
+
+    let sum1 = sumDigitsUp n
+    System.Console.WriteLine("Сумма цифр (рекурсия вверх): " + sum1.ToString())
+
+    let sum2 = sumDigits n
+    System.Console.WriteLine("Сумма цифр (рекурсия вниз): " + sum2.ToString())
 
     System.Console.ReadKey() |> ignore
     0
