@@ -6,6 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="QuadraticEquation.fs" />
+    <Compile Include="HelloWorld.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
