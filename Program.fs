@@ -89,6 +89,9 @@ let main args =
     let result14 = coprimeTraversal number (fun a b -> min a b) number
     System.Console.WriteLine(result14.ToString())
 
+    let result15 = eulerFunction number
+    System.Console.WriteLine(result15.ToString())
+
     System.Console.ReadKey() |> ignore
     0
 
