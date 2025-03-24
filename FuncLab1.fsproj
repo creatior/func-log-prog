@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="Coprimes.fs" />
     <Compile Include="FavProgLang.fs" />
     <Compile Include="Traverse.fs" />
     <Compile Include="CylinderVolume.fs" />

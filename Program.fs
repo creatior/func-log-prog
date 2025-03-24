@@ -6,7 +6,7 @@ open Fibonacci
 open CylinderVolume
 open Traverse
 open FavProgLang
-
+open Coprimes
 
 let task6 bool =
     match bool with
@@ -28,26 +28,26 @@ let main args =
         | Quadratic(x1, x2) -> printf "Квадратное уравнение, 2 корня: x1 = %f x2 = %f\n\n" x1 x2
 
     System.Console.Write("Введите радиус: ")
-    let r = System.Console.ReadLine() |> float
+    //let r = System.Console.ReadLine() |> float
     System.Console.Write("Введите высоту: ")
-    let h = System.Console.ReadLine() |> float
+    //let h = System.Console.ReadLine() |> float
 
-    let volume = cylinderVolume r h
+    //let volume = cylinderVolume r h
 
-    System.Console.WriteLine("Объем (каррирование): " + volume.ToString())
+    //System.Console.WriteLine("Объем (каррирование): " + volume.ToString())
 
-    let volume2 = cylinderVolumeSuperPos r h
+    //let volume2 = cylinderVolumeSuperPos r h
 
-    System.Console.WriteLine("Объем: (суперпозиция): " + volume2.ToString() + "\n")
+    //System.Console.WriteLine("Объем: (суперпозиция): " + volume2.ToString() + "\n")
 
-    System.Console.Write("Сумма цифр\nВведите число: ")
-    let n = System.Console.ReadLine() |> int
+    //System.Console.Write("Сумма цифр\nВведите число: ")
+    //let n = System.Console.ReadLine() |> int
 
-    let sum1 = sumDigitsUp n
-    System.Console.WriteLine("Сумма цифр (рекурсия вверх): " + sum1.ToString())
+    //let sum1 = sumDigitsUp n
+    //System.Console.WriteLine("Сумма цифр (рекурсия вверх): " + sum1.ToString())
 
-    let sum2 = sumDigits n
-    System.Console.WriteLine("Сумма цифр (рекурсия вниз): " + sum2.ToString())
+    //let sum2 = sumDigits n
+    //System.Console.WriteLine("Сумма цифр (рекурсия вниз): " + sum2.ToString())
 
     let result1 = fibonacciUp 19
     System.Console.WriteLine(result1.ToString())
@@ -72,8 +72,22 @@ let main args =
     //let language = System.Console.ReadLine() |> string
     //favouriteProgrammingLanguage language
 
-    favLangSuperPos ()
-    favLangCarry ()
+    //favLangSuperPos ()
+    //favLangCarry ()
+
+    let number = 25
+
+    let result11 = coprimeTraversal number (+) 0
+    System.Console.WriteLine(result11.ToString())
+
+    let result12 = coprimeTraversal number (fun a b -> a + 1) 0
+    System.Console.WriteLine(result12.ToString())
+
+    let result13 = coprimeTraversal number (fun a b -> max a b) 0
+    System.Console.WriteLine(result13.ToString())
+
+    let result14 = coprimeTraversal number (fun a b -> min a b) number
+    System.Console.WriteLine(result14.ToString())
 
     System.Console.ReadKey() |> ignore
     0
