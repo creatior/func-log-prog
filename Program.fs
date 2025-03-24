@@ -2,18 +2,14 @@
 open HelloWorld
 open QuadraticEquation
 open SumDigits
+open Fibonacci
+open CylinderVolume
+open Traverse
 
-let circleArea radius = 
-    let area = Math.PI * radius * radius
-    area
-
-let cylinderVolume radius height =
-    let area = circleArea radius
-    area * height
-
-let multipleAreaHeight area h = area * h
-
-let cylinderVolumeSuperPos = (circleArea >> multipleAreaHeight)
+let task6 bool =
+    match bool with
+        | true -> sumDigits
+        | false -> fibonacciUp
 
 [<EntryPoint>]
 let main args = 
@@ -48,6 +44,20 @@ let main args =
 
     let sum2 = sumDigits n
     System.Console.WriteLine("Сумма цифр (рекурсия вниз): " + sum2.ToString())
+
+    let result1 = fibonacciUp 19
+    System.Console.WriteLine(result1.ToString())
+    let result2 = fibonacciUp 19
+    System.Console.WriteLine(result2.ToString())
+    let resultTask6 = task6 false 14
+    System.Console.WriteLine(resultTask6.ToString())
+
+    let num = 756766
+    let result7 = traverse num (fun a b -> (a + b))
+    System.Console.WriteLine(result7.ToString())
+
+    let result9 = traverse num (fun a b -> max a b)
+    System.Console.WriteLine(result9.ToString())
 
     System.Console.ReadKey() |> ignore
     0

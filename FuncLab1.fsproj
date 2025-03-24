@@ -6,6 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="Traverse.fs" />
+    <Compile Include="CylinderVolume.fs" />
+    <Compile Include="Fibonacci.fs" />
     <Compile Include="SumDigits.fs" />
     <Compile Include="QuadraticEquation.fs" />
     <Compile Include="HelloWorld.fs" />
