@@ -56,7 +56,10 @@ let main args =
     let result7 = traverse num (fun a b -> (a + b))
     System.Console.WriteLine(result7.ToString())
 
-    let result9 = traverse num (fun a b -> max a b)
+    let result8 = traverse num (fun a b -> max a b)
+    System.Console.WriteLine(result8.ToString())
+
+    let result9 = traverseWithPredicate num (fun a b -> (a + b)) (fun a -> (a % 2 = 1))
     System.Console.WriteLine(result9.ToString())
 
     System.Console.ReadKey() |> ignore
