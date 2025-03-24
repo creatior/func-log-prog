@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="FavProgLang.fs" />
     <Compile Include="Traverse.fs" />
     <Compile Include="CylinderVolume.fs" />
     <Compile Include="Fibonacci.fs" />

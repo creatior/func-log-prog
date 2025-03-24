@@ -13,8 +13,10 @@ let task6 bool =
         | true -> sumDigits
         | false -> fibonacciUp
 
+
+
 [<EntryPoint>]
-let main args = 
+let main args =     
     printHelloWorld
 
     let result = solve 4. 2. -1.
@@ -67,8 +69,11 @@ let main args =
     let result10 = traverseWithPredicate num (fun a b -> max a b) (fun a -> (a % 2 = 1))
     System.Console.WriteLine(result10.ToString())
     
-    let language = System.Console.ReadLine() |> string
-    favouriteProgrammingLanguage language
+    //let language = System.Console.ReadLine() |> string
+    //favouriteProgrammingLanguage language
+
+    favLangSuperPos ()
+    favLangCarry ()
 
     System.Console.ReadKey() |> ignore
     0
