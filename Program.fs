@@ -5,6 +5,8 @@ open SumDigits
 open Fibonacci
 open CylinderVolume
 open Traverse
+open FavProgLang
+
 
 let task6 bool =
     match bool with
@@ -61,6 +63,12 @@ let main args =
 
     let result9 = traverseWithPredicate num (fun a b -> (a + b)) (fun a -> (a % 2 = 1))
     System.Console.WriteLine(result9.ToString())
+
+    let result10 = traverseWithPredicate num (fun a b -> max a b) (fun a -> (a % 2 = 1))
+    System.Console.WriteLine(result10.ToString())
+    
+    let language = System.Console.ReadLine() |> string
+    favouriteProgrammingLanguage language
 
     System.Console.ReadKey() |> ignore
     0

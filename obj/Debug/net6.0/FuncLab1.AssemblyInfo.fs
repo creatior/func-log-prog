@@ -10,7 +10,7 @@ open System.Reflection
 [<assembly: System.Reflection.AssemblyCompanyAttribute("FuncLab1")>]
 [<assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")>]
 [<assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")>]
-[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a34d8e34d6a75d9df95181c05729a4a1e427da87")>]
+[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d0eaf86e38c4b7c1663be8276f6a0ea10258fc80")>]
 [<assembly: System.Reflection.AssemblyProductAttribute("FuncLab1")>]
 [<assembly: System.Reflection.AssemblyTitleAttribute("FuncLab1")>]
 [<assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")>]
