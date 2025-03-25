@@ -7,6 +7,7 @@ open CylinderVolume
 open Traverse
 open FavProgLang
 open Coprimes
+open NumericMethods
 
 let task6 bool =
     match bool with
@@ -92,8 +93,14 @@ let main args =
     let result15 = eulerFunction number
     System.Console.WriteLine(result15.ToString())
 
-    let result16 = coprimeTraversalWithPredicate number (+) (fun x -> (x%2)=0) 0
+    let result16 = countEvenNotCoprime number
     Console.WriteLine(result16)
+
+    let result17 = maxDigitNotDiv3 number
+    Console.WriteLine(result17)
+
+    let result18 = computeProduct number
+    Console.WriteLine(result18)
 
     System.Console.ReadKey() |> ignore
     0
