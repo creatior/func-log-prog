@@ -92,6 +92,9 @@ let main args =
     let result15 = eulerFunction number
     System.Console.WriteLine(result15.ToString())
 
+    let result16 = coprimeTraversalWithPredicate number (+) (fun x -> (x%2)=0) 0
+    Console.WriteLine(result16)
+
     System.Console.ReadKey() |> ignore
     0
 
